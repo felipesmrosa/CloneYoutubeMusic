@@ -1,0 +1,26 @@
+// npm install -D sass
+
+$preto: #121212;
+$branco: #fff;
+$text: #d8d8d8;
+$textEscuro: #848484;
+$cinza: #4c4c4c;
+$cinzaEscuro: #353535;
+
+$fontFamily: "Nunito", sans-serif;
+
+%displayCenter {
+  display: flex;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fontFamily;
+}
+body {
+  background-color: $preto;
+  color: $branco;
+}

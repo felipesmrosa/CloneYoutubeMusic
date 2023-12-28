@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  grid-template-columns: 0.15fr 1fr;
+  height: 100vh;
+  padding-left: 2rem;
+  &__menu {
+    border-right: 2px solid #4c4c4c;
+    padding-right: 1rem;
+  }
+  &__conteudo {
+    padding: 0% 15%;
+    background: linear-gradient(
+      180deg,
+      rgb(18, 18, 18) 0%,
+      rgb(22 22 22) 50%,
+      rgb(31 31 31) 100%
+    );
+  }
+}

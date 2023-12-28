@@ -1,0 +1,99 @@
+.conteudo {
+  &__header {
+    margin: 0.8rem 0;
+    @extend %displayCenter;
+    justify-content: space-around;
+    gap: 48%;
+    input {
+      background-image: url("../../src/img/search.svg");
+      background-size: 20px; /* Ajuste o tamanho do ícone conforme necessário */
+      background-repeat: no-repeat;
+      background-position: 5px center; /* Posição do ícone */
+      width: 100%;
+      height: 2.5rem;
+      padding: 0 2rem;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      background-color: $cinzaEscuro;
+      border: 1px solid $cinza;
+      font-size: 0.875rem;
+      color: $textEscuro;
+      &::placeholder {
+        color: $textEscuro;
+      }
+    }
+    &__icones {
+      @extend %displayCenter;
+      justify-content: end;
+      gap: 1rem;
+      svg {
+        font-size: 1.5rem;
+      }
+      &--perfil {
+        width: 15%;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__tags {
+    @extend %displayCenter;
+    justify-content: start;
+    gap: 1rem;
+    margin: 2rem 0;
+    &--tag {
+      background: $cinza;
+      color: $text;
+      font-size: 0.8rem;
+      padding: 0.2rem 0.8rem;
+      border-radius: 2rem;
+      width: auto;
+      text-align: center;
+    }
+  }
+  &__radio {
+    &--smallText {
+      font-size: 0.7rem;
+      color: $text;
+    }
+    &__listaDeMusicas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 60px);
+      text-align: start;
+      margin-top: 0.7rem;
+      &--musica {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 1rem;
+        font-size: 0.8rem;
+        img {
+          width: 10%;
+        }
+        &--banda {
+          color: $textEscuro;
+        }
+      }
+    }
+  }
+  &__albumDestaque {
+    &--album {
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      gap: 0.5rem;
+      &-descricao {
+        font-size: 0.8rem;
+        color: $textEscuro;
+      }
+      &-infos {
+        width: 100%;
+        &-img {
+          width: 19vh;
+          height: 19vh;
+        }
+      }
+    }
+  }
+}
