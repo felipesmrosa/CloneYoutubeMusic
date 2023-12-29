@@ -1,0 +1,53 @@
+.gallery {
+  margin-top: 1rem;
+}
+
+.gallery img {
+  width: 22vh;
+  height: 22vh;
+  border-radius: 5px;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  top: 130.15vh;
+  transform: translateY(-50%);
+  background: transparent;
+  color: $textEscuro;
+  height: 4vh;
+  padding: 0;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 4vh;
+  font-size: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 0.4rem;
+}
+
+.arrow.prev {
+  left: 107rem;
+}
+
+.arrow.next {
+  right: 7rem;
+}
+
+.info {
+  font-size: 0.9rem;
+}
+.banda {
+  font-size: 0.75rem;
+  color: $textEscuro;
+}

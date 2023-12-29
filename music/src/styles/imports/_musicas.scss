@@ -40,7 +40,7 @@
     @extend %displayCenter;
     justify-content: start;
     gap: 1rem;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
     &--tag {
       background: $cinza;
       color: $text;
@@ -66,9 +66,9 @@
         @extend %displayCenter;
         justify-content: start;
         gap: 1rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
         img {
-          width: 13%;
+          width: 11%;
         }
         &--banda {
           color: $textEscuro;
@@ -79,9 +79,8 @@
   &__albumDestaque {
     margin: 3rem 0;
     &--album {
-      display: flex;
-      align-items: start;
-      justify-content: start;
+      @extend %displayCenter;
+      justify-content: center;
       gap: 0.5rem;
       &-descricao {
         font-size: 0.8rem;
@@ -90,14 +89,21 @@
       &-infos {
         width: 100%;
         &-img {
-          width: 17vh;
-          height: 17vh;
+          width: 24.5vh;
+          height: 24.5vh;
         }
         &-imgAr {
-          width: 17vh;
-          height: 17vh;
+          width: 23vh;
+          height: 23vh;
           border-radius: 50%;
+          margin-bottom: 0.6rem;
         }
+      }
+      &-arti {
+        width: 100%;
+        @extend %displayCenter;
+        justify-content: center;
+        flex-direction: column;
       }
     }
   }

@@ -4,7 +4,7 @@ export function OutrosArtistas({ artistas }) {
       <h1>Artistas</h1>
       <div className="conteudo__albumDestaque--album">
         {artistas.map((artista) => (
-          <div className="conteudo__albumDestaque--album-infos">
+          <div className="conteudo__albumDestaque--album-arti">
             <img
               className="conteudo__albumDestaque--album-infos-imgAr"
               src={artista.image}
